@@ -32,8 +32,8 @@ public class AccountServiceImpl implements AccountService{
         accountDao.decrease(userId, payAmount);
         LOGGER.info("------->尝试扣减账户结束account");
 
+        //throw new RuntimeException("尝试扣减账户失败");
         return true;
-
     }
 
     @Override
